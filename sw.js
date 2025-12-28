@@ -1,23 +1,17 @@
-const CACHE_NAME = 'capelania-sincro-v1';
-
-const FILES_TO_CACHE = [
-  './',
-  './index.html',
-  './material.html',
-  './manifest.json',
-  './ícone-png.512.png'
-];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
-  );
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
-    })
-  );
-});
+{
+  "name": "Capelania SINCRO",
+  "short_name": "SINCRO",
+  "description": "Plataforma de Capelania e Suporte Psico-bíblico",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a3a5a",
+  "icons": [
+    {
+      "src": "icone512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
