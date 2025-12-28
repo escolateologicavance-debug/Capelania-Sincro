@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 - Atendimento Pastoral e Aconselhamento</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 25px; background-color: #f1f5f9; }
+        .content-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h1 { color: #003366; border-bottom: 3px solid #003366; padding-bottom: 10px; text-align: center; }
+        h2 { color: #004080; margin-top: 35px; border-left: 5px solid #003366; padding-left: 15px; background: #f8f9fa; }
+        p { margin-bottom: 20px; text-align: justify; text-indent: 2em; }
+        
+        .box-substancia { background: #fffde7; padding: 25px; border-radius: 10px; border: 1px solid #fff59d; margin: 25px 0; }
+        .box-substancia h4 { margin-top: 0; color: #fbc02d; text-transform: uppercase; }
+        
+        .voce-sabia { background: #e3f2fd; padding: 20px; border-radius: 10px; border-left: 6px solid #2196f3; margin: 25px 0; font-size: 0.95em; }
+        
+        /* Sistema de Avaliação */
+        .quiz-container { background: white; padding: 35px; border-radius: 15px; border: 1px solid #cfd8dc; }
+        .question-block { margin-bottom: 25px; padding: 20px; border-radius: 8px; border: 1px solid #eee; }
+        .question-text { font-weight: bold; font-size: 1.1em; color: #003366; display: block; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 12px; cursor: pointer; padding: 10px; border-radius: 5px; }
+        label:hover { background: #f0f4f8; }
+        
+        .btn-finalizar { width: 100%; padding: 20px; background: #003366; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 20px; }
+
+        /* Tela de Reprovação */
+        #tela-bloqueio { display: none; border: 3px solid #ff0000; border-radius: 15px; overflow: hidden; margin-top: 20px; background: white; }
+        .reprovado-header { color: #ff0000; padding: 25px; text-align: center; font-weight: bold; font-size: 26px; border-bottom: 1px solid #ffcccc; }
+        .bloqueio-corpo { padding: 30px; text-align: center; }
+        .btn-whatsapp { display: block; background: #25d366; color: white; padding: 18px; text-decoration: none; border-radius: 10px; font-weight: bold; margin: 25px auto; width: 70%; font-size: 18px; }
+        .input-codigo { padding: 15px; width: 60%; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 15px; text-align: center; font-size: 18px; }
+        .btn-liberar { background: #003366; color: white; padding: 15px; width: 65%; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="content-card">
+    <h1>05 – Atendimento Pastoral e Aconselhamento</h1>
+
+    <h2>1. A Natureza do Atendimento na Capelania</h2>
+    <p>O atendimento pastoral na capelania difere do aconselhamento clínico ou psicológico. Enquanto a psicologia foca nos processos mentais e comportamentais, o suporte teísta foca na relação da alma com o Criador e no significado do sofrimento. O capelão não busca "consertar" a pessoa, mas caminhar com ela, validando sua dor sob uma perspectiva bíblica de esperança.</p>
+    <p>Este atendimento exige o que chamamos de "Escuta Compassiva". Ouvir na capelania é um ato espiritual. Muitas vezes, o assistido não precisa de uma resposta teológica complexa, mas de um ouvido que suporte ouvir seu lamento sem julgamentos. O capelão qualifica o estar do outro ao oferecer um espaço seguro para que as angústias sejam externalizadas e, posteriormente, entregues a Deus.</p>
+
+    <div class="box-substancia">
+        <h4>Substância: A Diferença entre Ouvir e Escutar</h4>
+        <p>Ouvir é um processo biológico; escutar é um ato de entrega. Na capelania, a escuta ativa envolve observar o tom de voz, os silêncios e a linguagem corporal. É uma ferramenta de suporte emocional prático que demonstra ao sofredor que ele é importante e que sua dor tem voz.</p>
+    </div>
+
+    <h2>2. A Escuta como Ferramenta de Cura</h2>
+    <p>Biblicamente, vemos em Tiago 1:19 a orientação: "Seja todo homem pronto para ouvir, tardio para falar". Este é o segredo do bom aconselhamento. O capelão deve resistir à tentação de "dar palestras" ou usar frases feitas como "vai ficar tudo bem". O suporte real acontece quando o capelão permite que o silêncio também fale, respeitando o tempo de processamento da crise pelo assistido.</p>
+    <p>Quando o capelão escuta de verdade, ele identifica as "palavras-chave" da dor da pessoa. Isso permite que, no momento da oração ou da palavra final, ele seja assertivo e vá de encontro à necessidade real. O aconselhamento pastoral é, portanto, um exercício de humildade onde o capelão se esvazia de si para ser preenchido pela necessidade do próximo.</p>
+
+    <div class="voce-sabia">
+        <strong>Você sabia?</strong><br>
+        Em situações de trauma, o cérebro tem dificuldade em processar lógica. Por isso, no primeiro atendimento, o suporte emocional deve ser focado no acolhimento e na segurança, e não em debates teológicos ou cobranças morais.
+    </div>
+
+    <h2>3. O Uso da Palavra e da Oração</h2>
+    <p>A oração e a leitura bíblica são os recursos centrais do capelão, mas devem ser usados com sabedoria ética. A oração deve ser breve, focada na necessidade expressa pelo assistido e carregada de paz. Ela não deve ser usada para "pregar" para a pessoa ou para forçar uma confissão, mas para conectá-la à fonte de todo o consolo.</p>
+    <p>Ao usar a Bíblia, o capelão deve escolher textos que falem ao coração atribulado. Salmos de confiança e as promessas de Jesus são bálsamos poderosos. O objetivo é que o assistido sinta que Deus conhece sua situação. A Palavra é uma âncora que estabiliza as emoções em meio à tempestade do internamento ou do isolamento prisional.</p>
+
+    <h2>4. Limites do Aconselhamento</h2>
+    <p>O capelão precisa conhecer seus limites. Ele não substitui o médico, o psicólogo ou o advogado. Se identificar tendências suicidas graves, patologias mentais ou necessidades jurídicas, deve encaminhar o assistido aos profissionais competentes da instituição. Ser ético é saber até onde sua competência espiritual alcança e onde começa o trabalho técnico de terceiros.</p>
+
+    <h2>5. Empatia sem Absorção</h2>
+    <p>Para manter a sua própria saúde emocional, o capelão deve praticar a empatia sem absorver a dor para si. Ele deve "sentir com" o outro, mas não "tornar-se" o outro. O suporte teísta ensina que o fardo final pertence a Deus. O capelão é apenas o facilitador que ajuda o assistido a depositar esse fardo aos pés de Cristo, retornando para sua casa com a consciência de dever cumprido e a mente em paz.</p>
+</div>
+
+<div class="quiz-container" id="quiz-area">
+    <h2 style="text-align: center; color: #003366;">AVALIAÇÃO DA MATÉRIA 05</h2>
+    <form id="quiz-form">
+        <div class="question-block">
+            <span class="question-text">1. Qual o foco principal do atendimento pastoral na capelania?</span>
+            <label><input type="radio" name="q1" value="correto"> A relação da alma com o Criador e o sentido do sofrimento sob a ótica bíblica.</label>
+            <label><input type="radio" name="q1" value="errado"> Diagnosticar doenças mentais e prescrever tratamentos clínicos.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">2. O que caracteriza a "Escuta Compassiva"?</span>
+            <label><input type="radio" name="q2" value="correto"> Oferecer um espaço seguro e sem julgamentos para a externalização da dor.</label>
+            <label><input type="radio" name="q2" value="errado"> Interromper o assistido constantemente para corrigir sua teologia.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">3. Segundo Tiago 1:19, qual deve ser a postura do conselheiro?</span>
+            <label><input type="radio" name="q3" value="errado"> Falar o máximo possível para convencer a pessoa do seu erro.</label>
+            <label><input type="radio" name="q3" value="correto"> Ser pronto para ouvir e tardio para falar.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">4. Como deve ser a oração no atendimento de capelania?</span>
+            <label><input type="radio" name="q4" value="correto"> Breve, focada na necessidade do assistido e transmitindo paz.</label>
+            <label><input type="radio" name="q4" value="errado"> Longa e barulhenta, para que todos na instituição ouçam.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">5. O que o capelão deve fazer ao identificar uma patologia mental grave?</span>
+            <label><input type="radio" name="q5" value="correto"> Encaminhar o assistido aos profissionais técnicos competentes (médicos/psicólogos).</label>
+            <label><input type="radio" name="q5" value="errado"> Tentar tratar o problema sozinho através de técnicas esotéricas.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">6. Qual o perigo de usar "frases feitas" como "vai ficar tudo bem"?</span>
+            <label><input type="radio" name="q6" value="correto"> Pode invalidar a dor real que o assistido está sentindo no momento.</label>
+            <label><input type="radio" name="q6" value="errado"> Nenhuma, pois são frases que sempre ajudam em qualquer caso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">7. A "Escuta Ativa" envolve observar o quê?</span>
+            <label><input type="radio" name="q7" value="correto"> Tom de voz, silêncios e linguagem corporal do assistido.</label>
+            <label><input type="radio" name="q7" value="errado"> Apenas o relógio para encerrar o atendimento rápido.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">8. O que significa "Empatia sem Absorção"?</span>
+            <label><input type="radio" name="q8" value="correto"> Sentir com o outro, mas entender que o fardo final é entregue a Deus, não ao capelão.</label>
+            <label><input type="radio" name="q8" value="errado"> Não se importar com a dor do outro para não ficar triste.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">9. Qual o papel da Bíblia no suporte emocional teísta?</span>
+            <label><input type="radio" name="q9" value="correto"> Atuar como uma âncora de esperança através de promessas e textos de consolo.</label>
+            <label><input type="radio" name="q9" value="errado"> Ser usada como um manual de regras para punir o sofredor.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">10. Em situações de trauma, o foco inicial deve ser:</span>
+            <label><input type="radio" name="q10" value="correto"> Acolhimento, segurança e presença solidária.</label>
+            <label><input type="radio" name="q10" value="errado"> Debates teológicos profundos sobre a origem do mal.</label>
+        </div>
+
+        <button type="button" class="btn-finalizar" onclick="verificarAntesDeEnviar()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="tela-bloqueio">
+        <div class="reprovado-header">REPROVADO. Nota: <span id="nota-valor"></span></div>
+        <div class="bloqueio-corpo">
+            <h3 style="color: red;">SISTEMA BLOQUEADO</h3>
+            <p>Média mínima 7.0 não atingida.</p>
+            <p>1. Taxa de R$ 20,00 via PIX: <strong>escolateologiavance@gmail.com</strong></p>
+            <a href="https://wa.me/5566984666186" class="btn-whatsapp">ENVIAR COMPROVANTE</a>
+            <input type="text" id="codigo-input" class="input-codigo" placeholder="Código">
+            <button class="btn-liberar" onclick="liberar()">LIBERAR TESTE</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function verificarAntesDeEnviar() {
+        const total = 10;
+        let respondidas = 0;
+        for (let i = 1; i <= total; i++) {
+            const inputs = document.getElementsByName('q' + i);
+            for (const input of inputs) {
+                if (input.checked) { respondidas++; break; }
+            }
+        }
+
+        if (respondidas < total) {
+            alert("Você esqueceu de marcar " + (total - respondidas) + " pergunta(s). Por favor, responda todas!");
+        } else {
+            processarNota();
+        }
+    }
+
+    function processarNota() {
+        let nota = 0;
+        for (let i = 1; i <= 10; i++) {
+            const inputs = document.getElementsByName('q' + i);
+            for (const input of inputs) {
+                if (input.checked && input.value === "correto") {
+                    nota++;
+                }
+            }
+        }
+
+        if (nota < 7) {
+            document.getElementById('quiz-form').style.display = 'none';
+            document.getElementById('tela-bloqueio').style.display = 'block';
+            document.getElementById('nota-valor').innerText = nota;
+        } else {
+            alert("Aprovado com nota " + nota + "!");
+            window.location.href = "../material.html";
+        }
+    }
+
+    function liberar() {
+        if (document.getElementById('codigo-input').value === 'capelania2025') {
+            document.getElementById('tela-bloqueio').style.display = 'none';
+            document.getElementById('quiz-form').style.display = 'block';
+            document.getElementById('quiz-form').reset();
+        } else {
+            alert('Código incorreto.');
+        }
+    }
+</script>
+</body>
+</html>

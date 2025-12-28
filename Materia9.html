@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 - Capelania Escolar</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 25px; background-color: #f1f8e9; }
+        .content-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h1 { color: #2e7d32; border-bottom: 3px solid #2e7d32; padding-bottom: 10px; text-align: center; }
+        h2 { color: #388e3c; margin-top: 35px; border-left: 5px solid #2e7d32; padding-left: 15px; background: #f9fbf9; }
+        p { margin-bottom: 20px; text-align: justify; text-indent: 2em; }
+        
+        .box-substancia { background: #f1f8e9; padding: 25px; border-radius: 10px; border: 2px solid #c5e1a5; margin: 25px 0; }
+        .box-substancia h4 { margin-top: 0; color: #2e7d32; text-transform: uppercase; border-bottom: 1px solid #c5e1a5; padding-bottom: 10px; }
+        
+        .alerta-conduta { background: #fffde7; padding: 20px; border-radius: 10px; border-left: 6px solid #fbc02d; margin: 25px 0; font-size: 0.95em; color: #5d4037; }
+        
+        /* Avaliação */
+        .quiz-container { background: white; padding: 35px; border-radius: 15px; border: 1px solid #c5e1a5; }
+        .question-block { margin-bottom: 25px; padding: 20px; border-radius: 8px; border: 1px solid #e8f5e9; }
+        .question-text { font-weight: bold; font-size: 1.1em; color: #1b5e20; display: block; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 12px; cursor: pointer; padding: 12px; border-radius: 6px; border: 1px solid transparent; }
+        label:hover { background: #f1f8e9; border-color: #2e7d32; }
+        
+        .btn-finalizar { width: 100%; padding: 20px; background: #2e7d32; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 20px; }
+        #tela-bloqueio { display: none; border: 3px solid #d32f2f; border-radius: 15px; overflow: hidden; margin-top: 20px; background: white; }
+        .reprovado-header { background: #fff; color: #d32f2f; padding: 25px; text-align: center; font-weight: bold; font-size: 26px; border-bottom: 1px solid #ffcdd2; }
+        .bloqueio-corpo { padding: 30px; text-align: center; }
+        .btn-whatsapp { display: block; background: #25d366; color: white; padding: 18px; text-decoration: none; border-radius: 10px; font-weight: bold; margin: 20px auto; width: 70%; font-size: 18px; }
+        .input-codigo { padding: 15px; width: 60%; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 15px; text-align: center; font-size: 18px; }
+        .btn-liberar { background: #2e7d32; color: white; padding: 15px; width: 65%; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="content-card">
+    <h1>09 – Capelania Escolar</h1>
+
+    <h2>1. A Escola como Campo de Missão e Suporte</h2>
+    <p>A capelania escolar é um serviço de assistência emocional e bíblica voltado para a comunidade educativa: alunos, professores, funcionários e pais. Em um tempo de fragilidade emocional juvenil e crises de identidade, o capelão atua como um referencial de valores e equilíbrio. Sua missão é colaborar na formação integral do estudante, promovendo um ambiente de respeito mútuo e suporte para o enfrentamento das pressões acadêmicas e sociais.</p>
+    <p>O foco aqui não é o proselitismo doutrinário, mas a "Qualificação do Estar" no cotidiano escolar. O capelão deve ser uma presença acessível, alguém que circula nos pátios e corredores, quebrando barreiras e demonstrando o amor bíblico através da escuta e do serviço. Ao contrário de uma aula de religião formal, a capelania escolar é um ministério de presença que valida as dores e dúvidas da juventude, oferecendo um porto seguro para o desabafo sem retaliações acadêmicas.</p>
+
+    <div class="alerta-conduta">
+        <strong>CONDUTA ÉTICA:</strong><br>
+        O capelão escolar deve respeitar rigorosamente o Estatuto da Criança e do Adolescente (ECA). Informações que envolvam abuso, maus-tratos ou risco de vida devem ser comunicadas imediatamente à direção da escola ou ao Conselho Tutelar, conforme a lei, superando o sigilo pastoral se necessário para a proteção da criança.
+    </div>
+
+    <h2>2. Enfrentamento ao Bullying e Mediação de Conflitos</h2>
+    <p>O *bullying* é um dos maiores desafios do ambiente escolar. O capelão atua na mediação dessas crises, trabalhando tanto com a vítima quanto com o agressor. A abordagem bíblica busca a reconciliação e o perdão, mas sem ignorar a disciplina e a correção de conduta. Qualificar o estar em um cenário de conflito exige que o capelão promova a empatia, ensinando que o valor do próximo não depende de sua performance ou aparência.</p>
+    <p>O suporte emocional ajuda o estudante a lidar com a rejeição e a construir uma autoimagem saudável baseada nos princípios da Criação. Ao mediar conflitos entre alunos, o capelão não busca apenas "apaziguar", mas transformar a cultura escolar em uma cultura de paz e cooperação, onde as diferenças são respeitadas e o suporte mútuo é a regra, não a exceção.</p>
+
+    <div class="box-substancia">
+        <h4>Substância: Suporte aos Educadores</h4>
+        <p>Professores e funcionários sofrem com a "Síndrome de Burnout" e o esgotamento mental. O capelão deve oferecer um espaço de escuta exclusivo para esses profissionais, funcionando como um suporte emocional para quem cuida e ensina. Uma escola com educadores emocionalmente saudáveis produz alunos mais equilibrados.</p>
+    </div>
+
+    <h2>3. O Suporte às Famílias e a Crise de Autoridade</h2>
+    <p>A escola é o ponto de encontro de famílias em crise. O capelão escolar atua como uma ponte entre a escola e a casa, oferecendo orientação bíblica aos pais sobre a educação de seus filhos e o manejo da autoridade com amor. Em momentos de luto na comunidade escolar ou desastres locais, o capelão coordena o acolhimento emocional e espiritual coletivo, estabilizando as emoções de todos os envolvidos.</p>
+
+    <h2>4. Valores e a Formação da Cosmovisão Bíblica</h2>
+    <p>Sem impor dogmas, o capelão propõe uma visão de mundo onde a ética, a verdade e o serviço ao próximo são pilares. Ele auxilia o jovem a responder às grandes perguntas da vida de forma segura, combatendo a desesperança e o niilismo. O suporte emocional no ambiente escolar é, em última instância, uma preparação para a vida fora dos muros da escola, consolidando um caráter resiliente e fundamentado.</p>
+</div>
+
+<div class="quiz-container" id="quiz-area">
+    <h2 style="text-align: center; color: #2e7d32;">AVALIAÇÃO DA MATÉRIA 09</h2>
+    <form id="quiz-form">
+        <div class="question-block">
+            <span class="question-text">1. Qual o papel principal do capelão escolar em relação ao Bullying?</span>
+            <label><input type="radio" name="q1" value="E"> Punir fisicamente os agressores para dar exemplo.</label>
+            <label><input type="radio" name="q1" value="C"> Atuar na mediação, promovendo a empatia e a reconciliação entre as partes.</label>
+            <label><input type="radio" name="q1" value="E"> Ignorar, pois são apenas brincadeiras típicas de crianças.</label>
+            <label><input type="radio" name="q1" value="E"> Pedir para os pais da vítima resolverem o problema fora da escola.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">2. Sobre o sigilo pastoral em casos de suspeita de abuso infantil, o capelão deve:</span>
+            <label><input type="radio" name="q2" value="E"> Manter o sigilo absoluto, pois o que o aluno conta é sagrado.</label>
+            <label><input type="radio" name="q2" value="E"> Contar apenas para outros alunos para que eles protejam o colega.</label>
+            <label><input type="radio" name="q2" value="C"> Comunicar imediatamente à direção ou Conselho Tutelar, priorizando a proteção da criança conforme o ECA.</label>
+            <label><input type="radio" name="q2" value="E"> Esperar o aluno completar 18 anos para tomar qualquer providência.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">3. O suporte emocional aos professores visa combater principalmente:</span>
+            <label><input type="radio" name="q3" value="C"> O esgotamento mental e a Síndrome de Burnout provocados pela pressão da função.</label>
+            <label><input type="radio" name="q3" value="E"> A falta de conhecimento técnico nas matérias que eles ensinam.</label>
+            <label><input type="radio" name="q3" value="E"> O excesso de férias que os profissionais de educação possuem.</label>
+            <label><input type="radio" name="q3" value="E"> A vontade dos professores de mudarem de profissão por motivos financeiros.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">4. Analise (V) ou (F): "A capelania escolar deve ser focada no proselitismo religioso agressivo dentro das salas de aula."</span>
+            <label><input type="radio" name="q4" value="E"> Verdadeiro.</label>
+            <label><input type="radio" name="q4" value="C"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">5. O que significa "Qualificar o Estar" no pátio da escola?</span>
+            <label><input type="radio" name="q5" value="E"> Vigiar os alunos para aplicar castigos disciplinares.</label>
+            <label><input type="radio" name="q5" value="C"> Ser uma presença acessível e empática, ouvindo os alunos em seu cotidiano real.</label>
+            <label><input type="radio" name="q5" value="E"> Realizar cultos obrigatórios durante o horário de recreio.</label>
+            <label><input type="radio" name="q5" value="E"> Monitorar a venda de lanches na cantina escolar.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">6. A ponte entre a escola e a família feita pelo capelão serve para:</span>
+            <label><input type="radio" name="q6" value="C"> Oferecer orientação bíblica sobre educação e manejo da autoridade com amor.</label>
+            <label><input type="radio" name="q6" value="E"> Cobrar as mensalidades atrasadas dos pais em nome da escola.</label>
+            <label><input type="radio" name="q6" value="E"> Denunciar os pais à polícia por qualquer nota baixa do aluno.</label>
+            <label><input type="radio" name="q6" value="E"> Fazer com que os pais transfiram seus filhos para a igreja do capelão.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">7. Analise (V) ou (F): "O capelão escolar é um facilitador que ajuda o jovem a construir uma autoimagem saudável baseada na Criação."</span>
+            <label><input type="radio" name="q7" value="C"> Verdadeiro.</label>
+            <label><input type="radio" name="q7" value="E"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">8. Em momentos de luto coletivo na escola, qual a função do capelão?</span>
+            <label><input type="radio" name="q8" value="E"> Suspender todas as aulas e mandar os alunos para casa imediatamente.</label>
+            <label><input type="radio" name="q8" value="C"> Coordenar o acolhimento emocional e estabilizar as emoções da comunidade escolar.</label>
+            <label><input type="radio" name="q8" value="E"> Proibir manifestações de tristeza para não atrapalhar o clima da escola.</label>
+            <label><input type="radio" name="q8" value="E"> Realizar um debate filosófico sobre a inexistência da morte.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">9. Qual a visão da capelania escolar sobre o valor do próximo?</span>
+            <label><input type="radio" name="q9" value="C"> O valor do próximo não depende de performance ou aparência, mas de sua dignidade intrínseca.</label>
+            <label><input type="radio" name="q9" value="E"> O valor do aluno é definido exclusivamente pela sua média bimestral.</label>
+            <label><input type="radio" name="q9" value="E"> Alunos mais bonitos e populares possuem mais valor espiritual.</label>
+            <label><input type="radio" name="q9" value="E"> A escola deve separar os alunos por níveis de santidade religiosa.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">10. O suporte emocional no ambiente escolar prepara o jovem para:</span>
+            <label><input type="radio" name="q10" value="E"> Ganhar todas as competições esportivas sem esforço.</label>
+            <label><input type="radio" name="q10" value="E"> Ignorar as leis da sociedade e seguir apenas filosofias laicas.</label>
+            <label><input type="radio" name="q10" value="C"> A vida fora da escola, consolidando um caráter resiliente e fundamentado em princípios bíblicos.</label>
+            <label><input type="radio" name="q10" value="E"> Tornar-se um ermitão isolado do mundo moderno.</label>
+        </div>
+
+        <button type="button" class="btn-finalizar" onclick="validar()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="tela-bloqueio">
+        <div class="reprovado-header">REPROVADO. Nota: <span id="nota-display"></span></div>
+        <div class="bloqueio-corpo">
+            <h3 style="color: red;">SISTEMA BLOQUEADO</h3>
+            <p>Média mínima 7.0 não atingida.</p>
+            <p>Taxa de R$ 20,00 via PIX: <strong>escolateologiavance@gmail.com</strong></p>
+            <a href="https://wa.me/5566984666186" class="btn-whatsapp">ENVIAR COMPROVANTE</a>
+            <input type="text" id="codigo-input" class="input-codigo" placeholder="Código">
+            <button class="btn-liberar" onclick="liberar()">LIBERAR TESTE</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validar() {
+        let respondidas = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) { if (op.checked) respondidas++; }
+        }
+        if (respondidas < 10) {
+            alert("Responda todas as 10 perguntas antes de enviar sua avaliação!");
+            return;
+        }
+        corrigir();
+    }
+
+    function corrigir() {
+        let nota = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) {
+                if (op.checked && op.value === "C") nota++;
+            }
+        }
+        if (nota < 7) {
+            document.getElementById('quiz-form').style.display = 'none';
+            document.getElementById('tela-bloqueio').style.display = 'block';
+            document.getElementById('nota-display').innerText = nota;
+        } else {
+            alert("Aprovado com sucesso! Nota " + nota + ". Você está pronto para a próxima etapa.");
+            window.location.href = "../material.html";
+        }
+    }
+
+    function liberar() {
+        if (document.getElementById('codigo-input').value === 'capelania2025') {
+            document.getElementById('tela-bloqueio').style.display = 'none';
+            document.getElementById('quiz-form').style.display = 'block';
+            document.getElementById('quiz-form').reset();
+            window.scrollTo(0,0);
+        } else {
+            alert('Código incorreto.');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 - Capelania Prisional</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 25px; background-color: #eceff1; }
+        .content-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h1 { color: #1a237e; border-bottom: 3px solid #1a237e; padding-bottom: 10px; text-align: center; }
+        h2 { color: #283593; margin-top: 35px; border-left: 5px solid #1a237e; padding-left: 15px; background: #f5f5f5; }
+        p { margin-bottom: 20px; text-align: justify; text-indent: 2em; }
+        
+        .box-substancia { background: #f8f9fa; padding: 25px; border-radius: 10px; border: 2px solid #cfd8dc; margin: 25px 0; }
+        .box-substancia h4 { margin-top: 0; color: #1a237e; text-transform: uppercase; border-bottom: 1px solid #cfd8dc; padding-bottom: 10px; }
+        
+        .alerta-seguranca { background: #fff1f1; padding: 20px; border-radius: 10px; border-left: 6px solid #d32f2f; margin: 25px 0; font-size: 0.95em; color: #b71c1c; }
+        
+        /* Avaliação */
+        .quiz-container { background: white; padding: 35px; border-radius: 15px; border: 1px solid #b0bec5; }
+        .question-block { margin-bottom: 25px; padding: 20px; border-radius: 8px; border: 1px solid #eee; transition: 0.3s; }
+        .question-block:hover { border-color: #1a237e; }
+        .question-text { font-weight: bold; font-size: 1.1em; color: #1a237e; display: block; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 12px; cursor: pointer; padding: 12px; border-radius: 6px; border: 1px solid transparent; }
+        label:hover { background: #f0f2f6; border-color: #1a237e; }
+        
+        .btn-finalizar { width: 100%; padding: 20px; background: #1a237e; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 20px; }
+        #tela-bloqueio { display: none; border: 3px solid #b71c1c; border-radius: 15px; overflow: hidden; margin-top: 20px; background: white; }
+        .reprovado-header { background: #fff; color: #b71c1c; padding: 25px; text-align: center; font-weight: bold; font-size: 26px; border-bottom: 1px solid #ffcdd2; }
+        .bloqueio-corpo { padding: 30px; text-align: center; }
+        .btn-whatsapp { display: block; background: #25d366; color: white; padding: 18px; text-decoration: none; border-radius: 10px; font-weight: bold; margin: 20px auto; width: 70%; font-size: 18px; }
+        .input-codigo { padding: 15px; width: 60%; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 15px; text-align: center; font-size: 18px; }
+        .btn-liberar { background: #1a237e; color: white; padding: 15px; width: 65%; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="content-card">
+    <h1>08 – Capelania Prisional</h1>
+
+    <h2>1. O Ambiente Carcerário e o Mandato de Visitação</h2>
+    <p>A capelania prisional atua em um dos cenários mais áridos da sociedade. Diferente do hospital, onde o paciente luta pela vida, no sistema prisional o assistido luta pela preservação de sua humanidade em meio ao isolamento e à privação de liberdade. O mandato bíblico de Mateus 25:36 ("estive preso e fostes ver-me") não é um convite ao sentimentalismo, mas uma ordem de assistência espiritual e emocional que reconhece a dignidade do ser humano, independente de seus crimes passados.</p>
+    <p>O capelão deve compreender que a prisão é uma instituição de controle total. A "Qualificação do Estar" aqui significa ser uma presença que não se corrompe pelo sistema, nem se torna justiceira. O objetivo é oferecer suporte para que o detento processe sua culpa, busque a reconciliação com o Criador e se prepare emocionalmente para a futura reintegração social. O capelão é, muitas vezes, o único elo de esperança desinteressada que o preso possui.</p>
+
+    <div class="alerta-seguranca">
+        <strong>ALERTA DE SEGURANÇA:</strong><br>
+        O capelão nunca deve levar ou trazer objetos, cartas, mensagens verbais ou qualquer item para dentro ou para fora do presídio sem autorização da diretoria. Essa conduta é infração ética grave e crime de favorecimento real, podendo levar à expulsão imediata do sistema e processos criminais.
+    </div>
+
+    <h2>2. A Postura Ética e a Neutralidade</h2>
+    <p>A neutralidade é o escudo do capelão prisional. Ele deve manter uma postura de respeito tanto com os agentes de segurança quanto com os detentos. Ser visto como "amigo dos presos" contra a polícia, ou vice-versa, invalida o ministério. O capelão qualifica o estar ao ser um facilitador de paz, agindo com integridade para ganhar a confiança das autoridades carcerárias, o que facilita o acesso às galerias e celas.</p>
+    <p>No atendimento individual, o capelão deve focar na escuta e no suporte bíblico. Não cabe ao capelão investigar o crime ou julgar o processo judicial; sua competência é a alma e o suporte emocional. A substituição da busca pelo "SER" pela aceitação do estado transitório de "estar preso" ajuda o detento a não se definir pelo seu crime, mas a buscar uma nova qualificação de conduta enquanto cumpre sua pena.</p>
+
+    <div class="box-substancia">
+        <h4>Substância: A Gestão do Tempo na Reclusão</h4>
+        <p>A mente do detento é terreno fértil para a depressão e a vingança. O suporte emocional deve focar na ressignificação do tempo. O capelão orienta o assistido a utilizar o período de reclusão para a autoanálise e o estudo bíblico, transformando a cela em um espaço de reflexão produtiva em vez de um depósito de amargura.</p>
+    </div>
+
+    <h2>3. Suporte à Família e aos Agentes Prisionais</h2>
+    <p>O trabalho prisional é tripartido. Primeiro, o detento; segundo, a família do detento (que sofre o estigma social); e terceiro, os agentes penitenciários. O estresse ocupacional dos agentes é altíssimo, com taxas elevadas de suicídio e problemas cardíacos. Um capelão qualificado oferece suporte emocional para quem trabalha no sistema, humanizando as relações de trabalho e reduzindo a tensão no ambiente carcerário.</p>
+
+    <h2>4. O Processo de Arrependimento e Restauração</h2>
+    <p>Diferente de filosofias laicas que focam apenas na ressocialização técnica, a capelania foca na restauração do caráter. O suporte bíblico trabalha o conceito de arrependimento como mudança de direção. O capelão deve ser cauteloso com conversões oportunistas (que visam apenas benefícios penais), focando em frutos de comportamento e na paz interior que independe da soltura imediata.</p>
+</div>
+
+<div class="quiz-container" id="quiz-area">
+    <h2 style="text-align: center; color: #1a237e;">AVALIAÇÃO DA MATÉRIA 08</h2>
+    <form id="quiz-form">
+        <div class="question-block">
+            <span class="question-text">1. Qual a conduta correta do capelão quanto ao transporte de objetos ou mensagens para detentos?</span>
+            <label><input type="radio" name="q1" value="E"> Pode levar cartas se forem apenas de conteúdo religioso para a família.</label>
+            <label><input type="radio" name="q1" value="E"> Pode levar pequenos presentes se o detento demonstrar muito arrependimento.</label>
+            <label><input type="radio" name="q1" value="C"> Jamais deve levar ou trazer qualquer item sem autorização oficial da direção prisional.</label>
+            <label><input type="radio" name="q1" value="E"> É permitido levar apenas lanches, pois o suporte físico ajuda o espiritual.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">2. O que significa a "neutralidade" do capelão no sistema carcerário?</span>
+            <label><input type="radio" name="q2" value="C"> Manter respeito e integridade tanto com os agentes de segurança quanto com os detentos.</label>
+            <label><input type="radio" name="q2" value="E"> Assumir o lado dos detentos, pois eles são as maiores vítimas do sistema.</label>
+            <label><input type="radio" name="q2" value="E"> Ser um informante da polícia sobre o que os presos dizem nas confissões.</label>
+            <label><input type="radio" name="q2" value="E"> Ignorar as regras de segurança para priorizar a liberdade de culto.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">3. No suporte emocional ao detento, o capelão deve focar primordialmente em:</span>
+            <label><input type="radio" name="q3" value="E"> Analisar o inquérito policial para provar a inocência do assistido.</label>
+            <label><input type="radio" name="q3" value="C"> Auxiliar na ressignificação da culpa e no processo de restauração do caráter.</label>
+            <label><input type="radio" name="q3" value="E"> Organizar rebeliões pacíficas para melhorar a alimentação.</label>
+            <label><input type="radio" name="q3" value="E"> Ensinar técnicas de defesa pessoal baseadas na Bíblia.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">4. Analise (V) ou (F): "A capelania prisional deve estender seu suporte emocional também aos agentes penitenciários, devido ao alto estresse da função."</span>
+            <label><input type="radio" name="q4" value="C"> Verdadeiro.</label>
+            <label><input type="radio" name="q4" value="E"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">5. Sobre conversões no ambiente prisional, o capelão deve ser cauteloso por quê?</span>
+            <label><input type="radio" name="q5" value="E"> Porque detentos não possuem alma capaz de salvação.</label>
+            <label><input type="radio" name="q5" value="C"> Porque existem conversões oportunistas que buscam apenas benefícios penais.</label>
+            <label><input type="radio" name="q5" value="E"> Porque a Bíblia proíbe pregar para pessoas condenadas pela justiça comum.</label>
+            <label><input type="radio" name="q5" value="E"> Porque o sistema prisional proíbe a mudança de religião dentro das celas.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">6. Qual o objetivo da "Qualificação do Estar" para alguém que cumpre pena?</span>
+            <label><input type="radio" name="q6" value="E"> Fazer a pessoa "ser" livre antes de sair da prisão.</label>
+            <label><input type="radio" name="q6" value="C"> Ajudar o detento a estar em paz e ter uma conduta digna durante o tempo de reclusão.</label>
+            <label><input type="radio" name="q6" value="E"> Convencer o detento de que a prisão é um estado filosófico inexistente.</label>
+            <label><input type="radio" name="q6" value="E"> Fazer com que o detento se sinta superior aos outros presos.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">7. Analise (V) ou (F): "O capelão tem competência para investigar crimes e julgar o processo judicial do assistido."</span>
+            <label><input type="radio" name="q7" value="E"> Verdadeiro.</label>
+            <label><input type="radio" name="q7" value="C"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">8. Por que a prisão é considerada uma "Instituição de controle total"?</span>
+            <label><input type="radio" name="q8" value="E"> Porque os presos controlam tudo o que acontece lá dentro.</label>
+            <label><input type="radio" name="q8" value="C"> Porque a rotina, os horários e a vida do indivíduo são geridos pela instituição.</label>
+            <label><input type="radio" name="q8" value="E"> Porque não existe liberdade religiosa garantida por lei.</label>
+            <label><input type="radio" name="q8" value="E"> Porque é impossível realizar suporte emocional em tais lugares.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">9. O "mandato de visitação" de Mateus 25:36 implica em:</span>
+            <label><input type="radio" name="q9" value="C"> Uma ordem de assistência que reconhece a dignidade humana acima do erro cometido.</label>
+            <label><input type="radio" name="q9" value="E"> Um convite para que o capelão ajude o preso a fugir se ele se converter.</label>
+            <label><input type="radio" name="q9" value="E"> Uma obrigação de concordar com todos os erros do detento.</label>
+            <label><input type="radio" name="q9" value="E"> Uma regra laica que não possui base bíblica.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">10. O suporte à família do detento é importante porque:</span>
+            <label><input type="radio" name="q10" value="E"> As famílias são as responsáveis pelos crimes cometidos.</label>
+            <label><input type="radio" name="q10" value="E"> É uma forma de conseguir doações para a capelania.</label>
+            <label><input type="radio" name="q10" value="C"> As famílias sofrem estigma e desamparo emocional devido à prisão do parente.</label>
+            <label><input type="radio" name="q10" value="E"> A família deve ser obrigada a pagar pelos pecados do preso.</label>
+        </div>
+
+        <button type="button" class="btn-finalizar" onclick="validar()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="tela-bloqueio">
+        <div class="reprovado-header">REPROVADO. Nota: <span id="nota-display"></span></div>
+        <div class="bloqueio-corpo">
+            <h3 style="color: red;">SISTEMA BLOQUEADO</h3>
+            <p>Média mínima 7.0 não atingida.</p>
+            <p>Taxa de R$ 20,00 via PIX: <strong>escolateologiavance@gmail.com</strong></p>
+            <a href="https://wa.me/5566984666186" class="btn-whatsapp">ENVIAR COMPROVANTE</a>
+            <input type="text" id="codigo-input" class="input-codigo" placeholder="Código">
+            <button class="btn-liberar" onclick="liberar()">LIBERAR TESTE</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validar() {
+        let respondidas = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) { if (op.checked) respondidas++; }
+        }
+        if (respondidas < 10) {
+            alert("Atenção! Você não respondeu todas as perguntas.");
+            return;
+        }
+        corrigir();
+    }
+
+    function corrigir() {
+        let nota = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) {
+                if (op.checked && op.value === "C") nota++;
+            }
+        }
+        if (nota < 7) {
+            document.getElementById('quiz-form').style.display = 'none';
+            document.getElementById('tela-bloqueio').style.display = 'block';
+            document.getElementById('nota-display').innerText = nota;
+        } else {
+            alert("Aprovado! Nota: " + nota + ". Continue seu aprendizado.");
+            window.location.href = "../material.html";
+        }
+    }
+
+    function liberar() {
+        if (document.getElementById('codigo-input').value === 'capelania2025') {
+            document.getElementById('tela-bloqueio').style.display = 'none';
+            document.getElementById('quiz-form').style.display = 'block';
+            document.getElementById('quiz-form').reset();
+            window.scrollTo(0,0);
+        } else {
+            alert('Código incorreto.');
+        }
+    }
+</script>
+</body>
+</html>

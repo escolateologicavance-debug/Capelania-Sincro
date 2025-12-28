@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusão de Grau - Faculdade AVANCE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; color: #1a1a1a; margin: 0; padding: 20px; }
+        .container { max-width: 850px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+        
+        .slogan-top { color: #5d4037; font-weight: bold; margin-bottom: 20px; font-style: italic; }
+        
+        .termo-box { background: #fffbe6; border: 1px solid #ffe58f; padding: 20px; border-radius: 8px; text-align: justify; margin: 25px 0; font-size: 0.9em; height: 180px; overflow-y: scroll; }
+        
+        .form-section { background: #f8f9fa; padding: 25px; border-radius: 10px; text-align: left; border: 1px solid #dee2e6; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ced4da; border-radius: 5px; box-sizing: border-box; font-size: 16px; }
+        
+        /* Layout do Certificado */
+        #certificado-area { display: none; margin-top: 50px; text-align: center; }
+        .certificado {
+            width: 1120px; height: 790px; padding: 50px; margin: 0 auto;
+            background-color: #fdf5e6; border: 30px solid #5d4037;
+            position: relative; color: #3e2723;
+            background-image: radial-gradient(#d7ccc8 1px, transparent 1px);
+            background-size: 30px 30px; box-sizing: border-box;
+            display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+        }
+        
+        .cert-header { font-size: 55px; font-weight: bold; margin: 0; color: #3e2723; }
+        .cert-slogan { font-size: 22px; font-style: italic; color: #5d4037; margin-bottom: 10px; }
+        .cert-sub { font-size: 38px; letter-spacing: 10px; font-weight: bold; border-bottom: 3px solid #5d4037; padding: 0 20px; margin-bottom: 20px; }
+        
+        .cert-body { font-size: 23px; line-height: 1.6; text-align: center; max-width: 900px; z-index: 2; }
+        .nome-aluno { font-size: 50px; font-family: 'Times New Roman', serif; font-weight: bold; text-decoration: underline; margin: 10px 0; display: block; color: #1a1a1a; }
+        
+        .assinaturas { width: 100%; display: flex; justify-content: space-around; align-items: flex-end; margin-bottom: 20px; }
+        .ass-box { width: 380px; border-top: 2px solid #3e2723; padding-top: 8px; font-size: 18px; }
+        
+        .footer-cert { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+        .qrcode-box { text-align: center; font-size: 12px; }
+        .qrcode-box img { width: 100px; height: 100px; border: 2px solid #5d4037; padding: 5px; background: white; }
+        
+        .btn-gerar { width: 100%; padding: 20px; background: #003366; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 18px; transition: 0.3s; }
+        .btn-gerar:hover { background: #002244; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Conclusão de Grau</h1>
+    <div class="slogan-top">Faculdade Teológica AVANCE - Ultrapassando limites!</div>
+
+    <div class="termo-box">
+        <h4>TERMO DE RESPONSABILIDADE E COMPROMETIMENTO ÉTICO</h4>
+        <p>Ao gerar este documento, o portador declara estar ciente de que o exercício da Capelania exige absoluto decoro e ética. Conforme a <strong>Lei Federal nº 9.982/2000</strong>, o acesso a hospitais, prisões, asilos e órgãos públicos é um direito assegurado ao capelão para oferecer suporte emocional e espiritual, podendo ser restringido apenas por motivos técnicos ou de segurança devidamente justificados pela instituição.</p>
+        <p>O capelão compromete-se a respeitar as normas internas e a não utilizar técnicas laicas ou esotéricas, mantendo o invólucro teísta e a inspiração bíblica em sua atuação conforme as diretrizes da Sincrologia.</p>
+    </div>
+
+    <div class="form-section">
+        <label style="font-weight: bold; cursor: pointer;">
+            <input type="checkbox" id="aceite" style="width: auto;"> Eu aceito os termos e compromissos éticos da Capelania.
+        </label><br><br>
+        <input type="text" id="nome" placeholder="Seu Nome Completo">
+        <input type="text" id="cpf" placeholder="Seu CPF (Ex: 000.000.000-00)">
+        <button class="btn-gerar" onclick="gerarCertificado()">GERAR MEU CERTIFICADO COM QR CODE</button>
+    </div>
+</div>
+
+<div id="certificado-area">
+    <div id="capture" class="certificado">
+        <div style="text-align: center;">
+            <div class="cert-header">Faculdade Teológica AVANCE</div>
+            <div class="cert-slogan">Ultrapassando limites!</div>
+            <div class="cert-sub">CAPELANIA</div>
+        </div>
+        
+        <div class="cert-body">
+            Este curso é validado pela Lei nº 9.394/96. Declaramos para os devidos fins que<br>
+            <span class="nome-aluno" id="cert-nome">NOME DO ALUNO</span>
+            concluiu o curso de formação técnica em Capelania, estando apto(a) ao exercício com acesso a ambientes contextualizados amparado pela Lei 9.982/00 para Suporte Emocional e Espiritual.
+            <br>
+            <small style="font-size: 16px;">Emissão autenticada em: <span id="cert-data"></span></small>
+        </div>
+
+        <div class="footer-cert">
+            <div class="qrcode-box">
+                <img id="qrcode" src="" alt="QR Code de Autenticidade">
+                <br>VALIDAÇÃO DIGITAL
+            </div>
+            
+            <img src="https://i.imgur.com/uRkLshR.png" style="width: 100px;" alt="Globo">
+
+            <div class="qrcode-box" style="opacity: 0;"> <img src="" style="width: 100px;">
+            </div>
+        </div>
+
+        <div class="assinaturas">
+            <div class="ass-box">
+                <strong>Gilberto Moreira</strong><br>
+                Diretor Executivo | CGADB 65.099
+            </div>
+            <div class="ass-box">
+                <strong id="cert-nome-ass">NOME DO CAPELÃO</strong><br>
+                Capelão(ã) | CPF: <span id="cert-cpf"></span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="btn-gerar" style="background: #25d366; width: 350px;" onclick="baixarImagem()">BAIXAR CERTIFICADO FINAL</button>
+</div>
+
+<script>
+    function gerarCertificado() {
+        // 1. Verifica o aceite
+        if (!document.getElementById('aceite').checked) {
+            alert("Você precisa aceitar o Termo de Responsabilidade para continuar.");
+            return;
+        }
+
+        // 2. Coleta dados
+        const nome = document.getElementById('nome').value.toUpperCase();
+        const cpf = document.getElementById('cpf').value;
+        
+        // 3. Validação
+        if (nome.length < 5 || cpf.length < 11) {
+            alert("Por favor, preencha o Nome Completo e o CPF corretamente.");
+            return;
+        }
+
+        // 4. Preenche os textos no certificado
+        const dataAtual = new Date().toLocaleDateString('pt-BR');
+        document.getElementById('cert-nome').innerText = nome;
+        document.getElementById('cert-nome-ass').innerText = nome;
+        document.getElementById('cert-cpf').innerText = cpf;
+        document.getElementById('cert-data').innerText = dataAtual;
+
+        // 5. Configura o link de validação para o WhatsApp
+        const linkValidacao = "https://wa.me/5566984666186?text=Validar%20Certificado%20de%20" + encodeURIComponent(nome) + "%20CPF%20" + encodeURIComponent(cpf);
+        
+        // 6. Gera a URL do QR Code
+        const qrUrl = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + encodeURIComponent(linkValidacao) + "&choe=UTF-8";
+        
+        // 7. Atribui a imagem ao QR Code
+        document.getElementById('qrcode').src = qrUrl;
+
+        // 8. Mostra a área do certificado IMEDIATAMENTE
+        document.getElementById('certificado-area').style.display = 'block';
+        
+        // 9. Rola a página para baixo suavemente
+        setTimeout(function(){
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }, 300);
+    }
+
+    function baixarImagem() {
+        // Captura a área e gera a imagem
+        html2canvas(document.querySelector("#capture"), {
+            scale: 2,
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: null
+        }).then(canvas => {
+            let link = document.createElement('a');
+            link.download = 'Certificado_Capelania_Avance.png';
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        });
+    }
+</script>
+</body>
+</html>

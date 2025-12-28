@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 - Capelania Militar</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 25px; background-color: #eceff1; }
+        .content-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h1 { color: #1a237e; border-bottom: 3px solid #1a237e; padding-bottom: 10px; text-align: center; }
+        h2 { color: #0d47a1; margin-top: 35px; border-left: 5px solid #1a237e; padding-left: 15px; background: #f5f5f5; }
+        p { margin-bottom: 20px; text-align: justify; text-indent: 2em; }
+        
+        .box-substancia { background: #e3f2fd; padding: 25px; border-radius: 10px; border: 2px solid #90caf9; margin: 25px 0; }
+        .box-substancia h4 { margin-top: 0; color: #0d47a1; text-transform: uppercase; border-bottom: 1px solid #90caf9; padding-bottom: 10px; }
+        
+        .alerta-militar { background: #efebe9; padding: 20px; border-radius: 10px; border-left: 6px solid #5d4037; margin: 25px 0; font-size: 0.95em; color: #3e2723; }
+        
+        /* Avaliação */
+        .quiz-container { background: white; padding: 35px; border-radius: 15px; border: 1px solid #90caf9; }
+        .question-block { margin-bottom: 25px; padding: 20px; border-radius: 8px; border: 1px solid #e3f2fd; }
+        .question-text { font-weight: bold; font-size: 1.1em; color: #0d47a1; display: block; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 12px; cursor: pointer; padding: 12px; border-radius: 6px; border: 1px solid transparent; }
+        label:hover { background: #e3f2fd; border-color: #1a237e; }
+        
+        .btn-finalizar { width: 100%; padding: 20px; background: #1a237e; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 20px; }
+        
+        /* Tela de Bloqueio */
+        #tela-bloqueio { display: none; border: 3px solid #b71c1c; border-radius: 15px; overflow: hidden; margin-top: 20px; background: white; }
+        .reprovado-header { background: #fff; color: #b71c1c; padding: 25px; text-align: center; font-weight: bold; font-size: 26px; border-bottom: 1px solid #ffcdd2; }
+        .bloqueio-corpo { padding: 30px; text-align: center; }
+        .btn-whatsapp { display: block; background: #25d366; color: white; padding: 18px; text-decoration: none; border-radius: 10px; font-weight: bold; margin: 20px auto; width: 70%; font-size: 18px; }
+        .input-codigo { padding: 15px; width: 60%; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 15px; text-align: center; font-size: 18px; }
+        .btn-liberar { background: #1a237e; color: white; padding: 15px; width: 65%; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="content-card">
+    <h1>10 – Capelania Militar</h1>
+
+    <h2>1. O Capelão nas Forças Armadas e de Segurança</h2>
+    <p>A capelania militar atua nas Forças Armadas e Auxiliares, garantindo o suporte emocional e espiritual em contextos de extrema pressão. O capelão militar é um oficial que zela pela higidez da tropa, fundamentado no direito constitucional de assistência religiosa em entidades de internação coletiva.</p>
+    <p>A submissão à hierarquia e disciplina é absoluta. O capelão atua como conselheiro e lubrificante social, atenuando as tensões da caserna. Sua presença é necessária no quartel, em missões de paz ou campos de batalha, oferecendo uma âncora bíblica onde o perigo é constante.</p>
+
+    <div class="alerta-militar">
+        <strong>REGRAS DE HIERARQUIA:</strong><br>
+        O capelão não interfere em ordens operacionais ou táticas. Seu papel é o suporte moral, garantindo que o soldado mantenha sua integridade humana e ética no exercício da força legítima.
+    </div>
+
+    <h2>2. Combate ao Estresse Pós-Traumático (TEPT)</h2>
+    <p>O militar é frequentemente exposto a traumas. A capelania foca na prevenção e no acompanhamento do Estresse Pós-Traumático através da escuta bíblica, ajudando o combatente a processar perdas e o peso da responsabilidade sem comprometer sua honra perante a tropa.</p>
+    <p>A "Qualificação do Estar" separa a identidade do indivíduo das funções brutas da missão. O capelão fortalece o caráter para que o uso da força não degrade a alma do soldado, permitindo que ele retorne à vida civil com sanidade e paz de espírito.</p>
+
+    <div class="box-substancia">
+        <h4>Substância: Suporte às Famílias</h4>
+        <p>A vida militar impõe riscos e afastamentos. O capelão gere a ansiedade das famílias e oferece suporte em casos de luto, permitindo que o militar foque na missão com estabilidade emocional.</p>
+    </div>
+
+    <h2>3. Ética e Humanidade no Conflito</h2>
+    <p>Em operações especiais, o capelão é o guardião da humanidade. Ele recorda os princípios bíblicos de justiça e misericórdia, impedindo a desumanização do oponente e protegendo os vulneráveis conforme os balizadores morais da Escritura.</p>
+</div>
+
+<div class="quiz-container" id="quiz-area">
+    <h2 style="text-align: center; color: #1a237e;">AVALIAÇÃO FINAL</h2>
+    <form id="quiz-form">
+        <div class="question-block">
+            <span class="question-text">1. Qual a base constitucional da capelania militar?</span>
+            <label><input type="radio" name="q1" value="E"> Ordens particulares de cada batalhão.</label>
+            <label><input type="radio" name="q1" value="C"> O direito de assistência religiosa em entidades de internação coletiva.</label>
+            <label><input type="radio" name="q1" value="E"> Uma lei que proíbe religião no exército.</label>
+            <label><input type="radio" name="q1" value="E"> O estatuto de uma denominação específica.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">2. Sobre a hierarquia, o capelão deve:</span>
+            <label><input type="radio" name="q2" value="E"> Assumir o comando operacional da tropa.</label>
+            <label><input type="radio" name="q2" value="C"> Respeitar rigorosamente a cadeia de comando e a disciplina militar.</label>
+            <label><input type="radio" name="q2" value="E"> Desobedecer ordens em nome da liberdade de culto.</label>
+            <label><input type="radio" name="q2" value="E"> Tentar converter o comandante à força.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">3. Como a capelania auxilia no Estresse Pós-Traumático (TEPT)?</span>
+            <label><input type="radio" name="q3" value="E"> Aplicando castigos físicos para endurecer a mente.</label>
+            <label><input type="radio" name="q3" value="C"> Oferecendo escuta bíblica e suporte para processar traumas e perdas.</label>
+            <label><input type="radio" name="q3" value="E"> Usando técnicas de mantras e meditação transcendental.</label>
+            <label><input type="radio" name="q3" value="E"> Ignorando o problema para não demonstrar fraqueza.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">4. Analise (V) ou (F): "O capelão atua como lubrificante social, atenuando as tensões entre comandos e subordinados."</span>
+            <label><input type="radio" name="q4" value="C"> Verdadeiro.</label>
+            <label><input type="radio" name="q4" value="E"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">5. O que significa "Qualificar o Estar" no campo de batalha?</span>
+            <label><input type="radio" name="q5" value="C"> Prover presença segura e suporte bíblico em meio ao perigo.</label>
+            <label><input type="radio" name="q5" value="E"> Convencer o soldado de que ele é um deus imortal.</label>
+            <label><input type="radio" name="q5" value="E"> Discutir filosofias laicas existenciais no quartel.</label>
+            <label><input type="radio" name="q5" value="E"> Realizar rituais esotéricos de proteção contra balas.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">6. Qual o papel ético do capelão em conflitos?</span>
+            <label><input type="radio" name="q6" value="E"> Incentivar a violência desmedida contra civis.</label>
+            <label><input type="radio" name="q6" value="C"> Guardar a humanidade, reforçando a justiça e a proteção aos vulneráveis.</label>
+            <label><input type="radio" name="q6" value="E"> Substituir o código militar pelo estatuto da sua igreja.</label>
+            <label><input type="radio" name="q6" value="E"> Permanecer neutro mesmo diante de crimes de guerra.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">7. Analise (V) ou (F): "O suporte à família do militar é vital para a estabilidade emocional da tropa."</span>
+            <label><input type="radio" name="q7" value="C"> Verdadeiro.</label>
+            <label><input type="radio" name="q7" value="E"> Falso.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">8. Por que a capelania militar é uma "dupla responsabilidade"?</span>
+            <label><input type="radio" name="q8" value="C"> Porque zela pelo espírito e pelo emocional prático do militar.</label>
+            <label><input type="radio" name="q8" value="E"> Porque o capelão ganha dois salários do governo.</label>
+            <label><input type="radio" name="q8" value="E"> Porque ele deve ser soldado e médico ao mesmo tempo.</label>
+            <label><input type="radio" name="q8" value="E"> Porque ele responde a duas igrejas diferentes.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">9. O luto antecipatório em famílias militares decorre de:</span>
+            <label><input type="radio" name="q9" value="E"> Falta de fé na proteção divina.</label>
+            <label><input type="radio" name="q9" value="C"> Ansiedade gerada pelo risco constante de morte em serviço.</label>
+            <label><input type="radio" name="q9" value="E"> Exigência de rituais funerários prévios.</label>
+            <label><input type="radio" name="q9" value="E"> Desejo de que o militar mude de profissão.</label>
+        </div>
+
+        <div class="question-block">
+            <span class="question-text">10. O objetivo final do suporte emocional é:</span>
+            <label><input type="radio" name="q10" value="E"> Criar soldados insensíveis e frios.</label>
+            <label><input type="radio" name="q10" value="C"> Garantir o retorno à vida civil com integridade e paz de espírito.</label>
+            <label><input type="radio" name="q10" value="E"> Promover a adoção de filosofias laicas na caserna.</label>
+            <label><input type="radio" name="q10" value="E"> Converter toda a tropa a uma única denominação.</label>
+        </div>
+
+        <button type="button" class="btn-finalizar" onclick="validar()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="tela-bloqueio">
+        <div class="reprovado-header">REPROVADO. Nota: <span id="nota-display"></span></div>
+        <div class="bloqueio-corpo">
+            <h3 style="color: red;">SISTEMA BLOQUEADO</h3>
+            <p>Média mínima 7.0 não atingida.</p>
+            <p>Taxa de R$ 20,00 via PIX: <strong>escolateologiavance@gmail.com</strong></p>
+            <a href="https://wa.me/5566984666186" class="btn-whatsapp">ENVIAR COMPROVANTE</a>
+            <input type="text" id="codigo-input" class="input-codigo" placeholder="Código">
+            <button class="btn-liberar" onclick="liberar()">LIBERAR TESTE</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validar() {
+        let respondidas = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) { if (op.checked) respondidas++; }
+        }
+        if (respondidas < 10) {
+            alert("Responda todas as perguntas!");
+            return;
+        }
+        corrigir();
+    }
+
+    function corrigir() {
+        let nota = 0;
+        for (let i = 1; i <= 10; i++) {
+            let ops = document.getElementsByName('q' + i);
+            for (let op of ops) {
+                if (op.checked && op.value === "C") nota++;
+            }
+        }
+        if (nota < 7) {
+            document.getElementById('quiz-form').style.display = 'none';
+            document.getElementById('tela-bloqueio').style.display = 'block';
+            document.getElementById('nota-display').innerText = nota;
+        } else {
+            alert("PARABÉNS! Você foi aprovado com nota " + nota + ". Clique em OK para colar seu grau!");
+            window.location.href = "conclusao.html";
+        }
+    }
+
+    function liberar() {
+        if (document.getElementById('codigo-input').value === 'capelania2025') {
+            document.getElementById('tela-bloqueio').style.display = 'none';
+            document.getElementById('quiz-form').style.display = 'block';
+            document.getElementById('quiz-form').reset();
+            window.scrollTo(0,0);
+        } else {
+            alert('Código incorreto.');
+        }
+    }
+</script>
+</body>
+</html>
