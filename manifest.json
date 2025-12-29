@@ -1,40 +1,29 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
+  "name": "Capelania SINCRO",
+  "short_name": "Capelania",
+  "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
+  "lang": "pt-BR",
+  "start_url": "/Capelania-Sincro/",
+  "scope": "/Capelania-Sincro/",
   "display": "standalone",
-  "name": "Capelania Sincro",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Capelania Sincro",
-  "start_url": "/",
+  "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
+  "dir": "auto",
+  "orientation": "any",
+  "id": "com.avance.capelaniasincro",
   "icons": [
     {
-      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-192.png",
-      "type": "image/png",
+      "src": "/Capelania-Sincro/icone-192.png",
       "sizes": "192x192",
-      "isSquare": true,
-      "isPng": true,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 192,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": true
+      "type": "image/png"
     },
     {
-      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-512.png",
-      "type": "image/png",
+      "src": "/Capelania-Sincro/icone-512.png",
       "sizes": "512x512",
-      "isSquare": true,
-      "isPng": true,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 512,
-      "is512x512": true,
-      "is256x256": false,
-      "is192x192": false
+      "type": "image/png"
     }
+  ]
+}    }
   ],
   "id": "com.avance.capelaniasincro.v7",
   "description": "Plataforma de Capelania e Suporte Psico-bíblico."
