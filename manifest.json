@@ -3,21 +3,21 @@
   "short_name": "Capelania Sincro",
   "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
   "lang": "pt-BR",
-  "start_url": "/index.html",
+  "start_url": "/Capelania-Sincro/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
   "orientation": "any",
   "dir": "auto",
-  "id": "com.avance.capelaniasincro.v6",
+  "id": "/Capelania-Sincro/",
   "icons": [
     {
-      "src": "/icone-192.png",
+      "src": "/Capelania-Sincro/icone-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icone-512.png",
+      "src": "/Capelania-Sincro/icone-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
