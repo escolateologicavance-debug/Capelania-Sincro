@@ -8,6 +8,7 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
+  "id": "com.avance.capelaniasincro.v7",
   "icons": [
     {
       "src": "/capelania-sincro/icone-192.png",
