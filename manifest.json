@@ -1,24 +1,23 @@
 {
-  "id": "com.avance.sincrocapelania.v7"
-  "name": "Capelania SINCRO",
-  "short_name": "Capelania",
+  "name": "Capelania Sincro",
+  "short_name": "Capelania Sincro",
   "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
   "lang": "pt-BR",
-  "start_url": "/Capelania-Sincro/index.html",
-  "scope": "/Capelania-Sincro/",
+  "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "any",
-  "dir": "auto",
   "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
+  "orientation": "any",
+  "dir": "auto",
+  "id": "com.avance.capelaniasincro.v6",
   "icons": [
     {
-      "src": "icone-192.png",
+      "src": "/icone-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icone-512.png",
+      "src": "/icone-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
