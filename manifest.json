@@ -1,29 +1,41 @@
 {
-  "nome": "Capelania SINCRO",
-  "nome_curto": "Capelânia",
-  "lang": "pt-BR",
-  "start_url": "index.html",
-  "exibir": "autônomo",
-  "cor_de_fundo": "#ffffff",
-  "cor_tema": "#1a3a5a",
- "icons": [
-  {
-    "src": "icone-192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  },
-  {
-    "src": "icone-512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
- ]
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "escolateologicavance-debug.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "escolateologicavance-debug.github",
+  "start_url": "/",
+  "theme_color": "#1a3a5a",
+  "icons": [
+    {
+      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 192,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": true
+    },
+    {
+      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 512,
+      "is512x512": true,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
   "id": "com.avance.capelaniasincro",
-  "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
-  "dir": "auto",
-  "orientação": "qualquer",
-  "name": "Capelania Urso",
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "short_name": "Capelania"
+  "description": "Plataforma de Capelania Cristã focada em cuidado espiritual, apoio emocional e orientação bíblico-pastoral, integrada em um PWA moderno para atendimento, formação e acompanhamento contínuo."
 }
