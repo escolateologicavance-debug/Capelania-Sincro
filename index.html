@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Capelania SINCRO</title>
 
-    <!-- PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1a3a5a">
-    <link rel="icon" type="image/png" sizes="512x512" href="icone-512.png">
-    <link rel="apple-touch-icon" href="icone-512.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icone-512.pgn">
+    <link rel="apple-touch-icon" href="icone-512.pgn">
 
     <style>
         html, body {
@@ -34,6 +33,172 @@
             text-transform: uppercase;
             margin-top: 20px;
         }
+        #capa {
+            text-align: center;
+            padding-top: 60px;
+            display: block; /* Garante que a capa comece visível */
+        }
+        .btn-bible {
+            display: inline-block;
+            background: #1a3a5a;
+            color: white;
+            padding: 40px;
+            text-decoration: none;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-bible span {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        #conteudo-interno {
+            display: none; /* Começa escondido */
+            padding-top: 20px;
+        }
+        .welcome-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1a3a5a;
+            border-left: 5px solid #1a3a5a;
+            padding-left: 10px;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        th {
+            background: #f4f4f4;
+            color: #1a3a5a;
+            width: 40%;
+        }
+        .btn-materia {
+            display: block;
+            text-align: center;
+            background: #28a745;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Faculdade Teológica AVANCE</h1>
+
+    <div id="capa">
+        <button class="btn-bible" onclick="abrirConteudo()">
+            <span>📖</span>
+            <strong>ENTRAR NO CURSO</strong>
+        </button>
+    </div>
+
+    <div id="conteudo-interno">
+        <div class="welcome-box">
+            <h3>🎓 Olá, Aluno(a)!</h3>
+            <p>
+                Seja bem-vindo(a) à plataforma oficial do Curso de Capelania SINCRO.
+                Este espaço foi desenvolvido para oferecer suporte à sua formação ministerial
+                e capacitação técnica (Método Psico-bíblico).
+            </p>
+        </div>
+
+        <h2>❓ Perguntas Frequentes (FAQ)</h2>
+        <table>
+            <tr>
+                <th>Duração do acesso?</th>
+                <td>Acesso por 3 meses a partir da confirmação do pagamento.</td>
+            </tr>
+            <tr>
+                <th>Onde acessar?</th>
+                <td>Exclusivamente através do Aplicativo Capelania SINCRO.</td>
+            </tr>
+            <tr>
+                <th>Como ter suporte?</th>
+                <td>E-mail: escolateologicavance@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2>📄 Termos de Uso e Disposições Legais</h2>
+        <table>
+            <tr>
+                <th>Propriedade</th>
+                <td>Conteúdo exclusivo de Gilberto Moreira / Faculdade Teológica AVANCE.</td>
+            </tr>
+            <tr>
+                <th>Amparo Legal</th>
+                <td>Curso livre – Lei nº 9.394/96. Atuação particular e/ou filantrópica.</td>
+            </tr>
+        </table>
+
+        <a href="material.html" class="btn-materia">
+            Acessar Matéria: Capelania
+        </a>
+
+        <div class="footer-note">
+            Aviso: Documento pessoal e intransferível. SINCROTERAPIA.
+        </div>
+    </div>
+</div>
+
+<script>
+    // Função para trocar as telas
+    function abrirConteudo() {
+        const capa = document.getElementById('capa');
+        const conteudo = document.getElementById('conteudo-interno');
+        
+        if(capa && conteudo) {
+            capa.style.display = 'none';
+            conteudo.style.display = 'block';
+            window.scrollTo(0, 0);
+        } else {
+            console.error("Erro: Elementos da página não encontrados.");
+        }
+    }
+
+    // Registro do Service Worker para PWA
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                console.log('ServiceWorker registrado com sucesso.');
+            }, function(err) {
+                console.log('Falha no registro do ServiceWorker: ', err);
+            });
+        });
+    }
+</script>
+</body>
+</html>
         #capa {
             text-align: center;
             padding-top: 60px;
