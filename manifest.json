@@ -1,40 +1,25 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
+  "name": "Capelania SINCRO",
+  "short_name": "SINCRO",
+  "description": "Plataforma de Capelania Cristã focada em cuidado espiritual, apoio emocional e orientação bíblico-pastoral.",
+  "start_url": "/Capelania-Sincro/index.html",
+  "scope": "/Capelania-Sincro/",
   "display": "standalone",
-  "name": "escolateologicavance-debug.github",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "escolateologicavance-debug.github",
-  "start_url": "/",
+  "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
   "icons": [
     {
-      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-192.png",
-      "type": "image/png",
+      "src": "icone-192.png",
       "sizes": "192x192",
-      "isSquare": true,
-      "isPng": true,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 192,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": true
+      "type": "image/png"
     },
     {
-      "src": "https://escolateologicavance-debug.github.io/Capelania-Sincro/icone-512.png",
-      "type": "image/png",
+      "src": "icone-512.png",
       "sizes": "512x512",
-      "isSquare": true,
-      "isPng": true,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 512,
-      "is512x512": true,
-      "is256x256": false,
-      "is192x192": false
+      "type": "image/png"
     }
+  ]
+}    }
   ],
   "id": "com.avance.capelaniasincro",
   "description": "Plataforma de Capelania Cristã focada em cuidado espiritual, apoio emocional e orientação bíblico-pastoral, integrada em um PWA moderno para atendimento, formação e acompanhamento contínuo."
