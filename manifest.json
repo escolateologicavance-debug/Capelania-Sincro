@@ -16,5 +16,9 @@
   "id": "com.avance.capelaniasincro",
   "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
   "dir": "auto",
-  "orientação": "qualquer"
+  "orientação": "qualquer",
+  "name": "Capelania Urso",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "short_name": "Capelania"
 }
