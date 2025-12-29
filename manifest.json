@@ -1,10 +1,14 @@
 {
+  "id": "com.avance.capelaniasincro",
   "name": "Capelania SINCRO",
-  "short_name": "SINCRO",
-  "description": "Plataforma de Capelania Cristã focada em cuidado espiritual, apoio emocional e orientação bíblico-pastoral.",
+  "short_name": "Capelania",
+  "description": "Plataforma de Capelania e Suporte Psico-bíblico.",
+  "lang": "pt-BR",
   "start_url": "/Capelania-Sincro/index.html",
   "scope": "/Capelania-Sincro/",
   "display": "standalone",
+  "orientation": "any",
+  "dir": "auto",
   "background_color": "#ffffff",
   "theme_color": "#1a3a5a",
   "icons": [
@@ -19,8 +23,4 @@
       "type": "image/png"
     }
   ]
-}    }
-  ],
-  "id": "com.avance.capelaniasincro",
-  "description": "Plataforma de Capelania Cristã focada em cuidado espiritual, apoio emocional e orientação bíblico-pastoral, integrada em um PWA moderno para atendimento, formação e acompanhamento contínuo."
 }
