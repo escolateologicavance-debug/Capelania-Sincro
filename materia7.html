@@ -105,7 +105,7 @@
         <div class="question-block">
             <span class="question-text">5. O que significa "Qualificar o Estar" no contexto de um diagnóstico terminal?</span>
             <label><input type="radio" name="q5" value="E"> Garantir ao paciente que ele será curado milagrosamente em todos os casos.</label>
-            <label><input type="radio" name="q5" value="C"> Ajudar o paciente a encontrar paz, reconciliação e dignidade dentro de sua condição atual.</label>
+            <label><input type="radio" name="q5" value="C"> Ajudar o paciente a encontrar paz, reconciliação e dignidade dentro de sua condition atual.</label>
             <label><input type="radio" name="q5" value="E"> Convencer o paciente de que sua doença é um castigo por erros passados.</label>
             <label><input type="radio" name="q5" value="E"> Sugerir a interrupção de tratamentos médicos para focar apenas na fé.</label>
         </div>
@@ -169,7 +169,9 @@
         let respondidas = 0;
         for (let i = 1; i <= 10; i++) {
             let ops = document.getElementsByName('q' + i);
-            for (let op of ops) { if (op.checked) respondidas++; }
+            let check = false;
+            for (let op of ops) { if (op.checked) check = true; }
+            if(check) respondidas++;
         }
         if (respondidas < 10) {
             alert("Responda todas as 10 perguntas antes de finalizar!");
@@ -192,7 +194,8 @@
             document.getElementById('nota-display').innerText = nota;
         } else {
             alert("Excelente! Você foi aprovado na Matéria 07 com nota " + nota);
-            window.location.href = "../materia8.html";
+            // AJUSTE AQUI: Removi o "../" para abrir o arquivo na mesma pasta
+            window.location.href = "materia8.html";
         }
     }
 
