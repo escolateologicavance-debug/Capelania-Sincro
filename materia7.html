@@ -1,190 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>07 - Capelania Hospitalar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>07 - Capelania Hospitalar</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.8;
-            color: #2c3e50;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 25px;
-            background-color: #f0f2f5;
-        }
-        .content-card {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #003366;
-            border-bottom: 3px solid #003366;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-        h2 {
-            color: #004080;
-            margin-top: 35px;
-            border-left: 5px solid #003366;
-            padding-left: 15px;
-            background: #f8f9fa;
-        }
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-            text-indent: 2em;
-        }
-        .box-substancia {
-            background: #eef2f7;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px dashed #003366;
-            margin: 25px 0;
-        }
-        .box-substancia h4 {
-            margin-top: 0;
-            color: #003366;
-            text-transform: uppercase;
-        }
-        .voce-sabia {
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 6px solid #ff9800;
-            margin: 25px 0;
-            font-size: 0.95em;
-        }
-        .quiz-container {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            border: 1px solid #d1d9e6;
-        }
-        .question-block {
-            margin-bottom: 25px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #eee;
-        }
-        .question-text {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #003366;
-            display: block;
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 12px;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        label:hover {
-            background: #f0f4f8;
-        }
-        .btn-finalizar {
-            width: 100%;
-            padding: 20px;
-            background: #003366;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        #tela-bloqueio {
-            display: none;
-            border: 3px solid #d9534f;
-            border-radius: 15px;
-            margin-top: 20px;
-            background: white;
-        }
-        .reprovado-header {
-            color: #d9534f;
-            padding: 25px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 26px;
-        }
-        .bloqueio-corpo {
-            padding: 30px;
-            text-align: center;
-        }
-    </style>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background:#f0f2f5;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+.quiz-container {
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+}
+.question-block {
+    margin-bottom:20px;
+}
+.btn-finalizar {
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    background:#003366;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+#tela-bloqueio {
+    display:none;
+    margin-top:20px;
+    color:red;
+    font-weight:bold;
+    text-align:center;
+}
+</style>
 </head>
 
 <body>
 
-<div class="content-card">
-    <h1>07 – Capelania Hospitalar</h1>
-    <p>Conteúdo da matéria mantido conforme enviado.</p>
+<div class="quiz-container">
+<h2>AVALIAÇÃO – MATÉRIA 07</h2>
+
+<form id="quiz-form" onsubmit="return false;">
+
+<div class="question-block">
+<label><input type="radio" name="q1" value="C"> Correta</label>
+<label><input type="radio" name="q1" value="E"> Errada</label>
 </div>
 
-<div class="quiz-container">
-    <h2 style="text-align:center;">AVALIAÇÃO DA MATÉRIA 07</h2>
+<div class="question-block">
+<label><input type="radio" name="q2" value="C"> Correta</label>
+<label><input type="radio" name="q2" value="E"> Errada</label>
+</div>
 
-    <form id="quiz-form">
+<div class="question-block">
+<label><input type="radio" name="q3" value="C"> Correta</label>
+<label><input type="radio" name="q3" value="E"> Errada</label>
+</div>
 
-        <div class="question-block">
-            <span class="question-text">1. Teste</span>
-            <label><input type="radio" name="q1" value="C"> Correta</label>
-            <label><input type="radio" name="q1" value="E"> Errada</label>
-        </div>
+<div class="question-block">
+<label><input type="radio" name="q4" value="C"> Correta</label>
+<label><input type="radio" name="q4" value="E"> Errada</label>
+</div>
 
-        <div class="question-block">
-            <span class="question-text">2. Teste</span>
-            <label><input type="radio" name="q2" value="C"> Correta</label>
-            <label><input type="radio" name="q2" value="E"> Errada</label>
-        </div>
+<div class="question-block">
+<label><input type="radio" name="q5" value="C"> Correta</label>
+<label><input type="radio" name="q5" value="E"> Errada</label>
+</div>
 
-        <div class="question-block">
-            <span class="question-text">3. Teste</span>
-            <label><input type="radio" name="q3" value="C"> Correta</label>
-            <label><input type="radio" name="q3" value="E"> Errada</label>
-        </div>
+<div class="question-block">
+<label><input type="radio" name="q6" value="C"> Correta</label>
+<label><input type="radio" name="q6" value="E"> Errada</label>
+</div>
 
-        <div class="question-block">
-            <span class="question-text">4. Teste</span>
-            <label><input type="radio" name="q4" value="C"> Correta</label>
-            <label><input type="radio" name="q4" value="E"> Errada</label>
-        </div>
+<div class="question-block">
+<label><input type="radio" name="q7" value="C"> Correta</label>
+<label><input type="radio" name="q7" value="E"> Errada</label>
+</div>
 
-        <div class="question-block">
-            <span class="question-text">5. Teste</span>
-            <label><input type="radio" name="q5" value="C"> Correta</label>
-            <label><input type="radio" name="q5" value="E"> Errada</label>
-        </div>
+<button class="btn-finalizar" onclick="validar()">FINALIZAR</button>
+</form>
 
-        <div class="question-block">
-            <span class="question-text">6. Teste</span>
-            <label><input type="radio" name="q6" value="C"> Correta</label>
-            <label><input type="radio" name="q6" value="E"> Errada</label>
-        </div>
-
-        <div class="question-block">
-            <span class="question-text">7. Teste</span>
-            <label><input type="radio" name="q7" value="C"> Correta</label>
-            <label><input type="radio" name="q7" value="E"> Errada</label>
-        </div>
-
-        <button type="button" class="btn-finalizar" onclick="validar()">FINALIZAR</button>
-    </form>
-
-    <div id="tela-bloqueio">
-        <div class="reprovado-header">REPROVADO</div>
-        <div class="bloqueio-corpo">
-            Nota insuficiente.
-        </div>
-    </div>
+<div id="tela-bloqueio">REPROVADO</div>
 </div>
 
 <script>
@@ -192,20 +94,27 @@ function validar() {
     let nota = 0;
 
     for (let i = 1; i <= 7; i++) {
-        let opcoes = document.getElementsByName('q' + i);
-        for (let op of opcoes) {
-            if (op.checked && op.value === "C") {
-                nota++;
+        let marcada = false;
+        let ops = document.getElementsByName("q" + i);
+
+        for (let op of ops) {
+            if (op.checked) {
+                marcada = true;
+                if (op.value === "C") nota++;
             }
+        }
+
+        if (!marcada) {
+            alert("Responda todas as perguntas.");
+            return;
         }
     }
 
     if (nota >= 7) {
-        alert("Aprovado! Nota: " + nota);
-        window.location.href = "materia8.html";
+        window.location.assign("materia8.html");
     } else {
-        document.getElementById('quiz-form').style.display = 'none';
-        document.getElementById('tela-bloqueio').style.display = 'block';
+        document.getElementById("quiz-form").style.display = "none";
+        document.getElementById("tela-bloqueio").style.display = "block";
     }
 }
 </script>
