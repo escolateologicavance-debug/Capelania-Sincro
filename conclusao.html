@@ -63,7 +63,7 @@
         </label><br><br>
         <input type="text" id="nome" placeholder="Seu Nome Completo">
         <input type="text" id="cpf" placeholder="Seu CPF (Ex: 000.000.000-00)">
-        <button class="btn-gerar" onclick="gerarCertificado()">GERAR MEU CERTIFICADO COM QR CODE</button>
+        <button class="btn-gerar" onclick="gerarCertificado()">GERAR MEU CERTIFICADO</button>
     </div>
 </div>
 
@@ -85,8 +85,7 @@
 
         <div class="footer-cert">
             <div class="qrcode-box">
-                <img id="qrcode" src="" alt="QR Code de Autenticidade">
-                <br>VALIDAÇÃO DIGITAL
+        
             </div>
             
             <img src="https://i.imgur.com/uRkLshR.png" style="width: 100px;" alt="Globo">
@@ -135,14 +134,8 @@
         document.getElementById('cert-cpf').innerText = cpf;
         document.getElementById('cert-data').innerText = dataAtual;
 
-        // 5. Configura o link de validação para o WhatsApp
         const linkValidacao = "https://wa.me/5566984666186?text=Validar%20Certificado%20de%20" + encodeURIComponent(nome) + "%20CPF%20" + encodeURIComponent(cpf);
         
-        // 6. Gera a URL do QR Code
-        const qrUrl = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + encodeURIComponent(linkValidacao) + "&choe=UTF-8";
-        
-        // 7. Atribui a imagem ao QR Code
-        document.getElementById('qrcode').src = qrUrl;
 
         // 8. Mostra a área do certificado IMEDIATAMENTE
         document.getElementById('certificado-area').style.display = 'block';
