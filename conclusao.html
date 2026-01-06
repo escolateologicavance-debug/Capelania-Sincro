@@ -19,7 +19,7 @@
         /* Layout do Certificado */
         #certificado-area { display: none; margin-top: 50px; text-align: center; }
         .certificado {
-            width: 1120px; height: 790px; padding: 50px; margin: 0 auto;
+            width: 1120px; height: 790px; padding: 60px; margin: 0 auto;
             background-color: #fdf5e6; border: 30px solid #5d4037;
             position: relative; color: #3e2723;
             background-image: radial-gradient(#d7ccc8 1px, transparent 1px);
@@ -31,14 +31,11 @@
         .cert-slogan { font-size: 22px; font-style: italic; color: #5d4037; margin-bottom: 10px; }
         .cert-sub { font-size: 38px; letter-spacing: 10px; font-weight: bold; border-bottom: 3px solid #5d4037; padding: 0 20px; margin-bottom: 20px; }
         
-        .cert-body { font-size: 23px; line-height: 1.6; text-align: center; max-width: 900px; z-index: 2; }
-        .nome-aluno { font-size: 50px; font-family: 'Times New Roman', serif; font-weight: bold; text-decoration: underline; margin: 10px 0; display: block; color: #1a1a1a; }
+        .cert-body { font-size: 23px; line-height: 1.6; text-align: center; max-width: 900px; z-index: 2; margin-top: 20px; }
+        .nome-aluno { font-size: 50px; font-family: 'Times New Roman', serif; font-weight: bold; text-decoration: underline; margin: 15px 0; display: block; color: #1a1a1a; }
         
-        .assinaturas { width: 100%; display: flex; justify-content: space-around; align-items: flex-end; margin-bottom: 20px; }
-        .ass-box { width: 380px; border-top: 2px solid #3e2723; padding-top: 8px; font-size: 18px; }
-        
-        .footer-cert { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
-      
+        .assinaturas { width: 100%; display: flex; justify-content: space-around; align-items: flex-end; margin-top: 40px; }
+        .ass-box { width: 400px; border-top: 2px solid #3e2723; padding-top: 10px; font-size: 20px; text-align: center; }
         
         .btn-gerar { width: 100%; padding: 20px; background: #003366; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 18px; transition: 0.3s; }
         .btn-gerar:hover { background: #002244; }
@@ -52,16 +49,16 @@
 
     <div class="termo-box">
         <h4>TERMO DE RESPONSABILIDADE E COMPROMETIMENTO ÉTICO</h4>
-        <p>Ao gerar este documento, o portador declara estar ciente de que o exercício da Capelania exige absoluto decoro e ética. Conforme a <strong>Lei Federal nº 9.982/2000</strong>, o acesso a hospitais, prisões, asilos e órgãos públicos é um direito assegurado ao capelão para oferecer suporte emocional e espiritual, podendo ser restringido apenas por motivos técnicos ou de segurança devidamente justificados pela instituição.</p>
-        <p>O capelão compromete-se a respeitar as normas internas e a não utilizar técnicas laicas ou esotéricas, mantendo o invólucro teísta e a inspiração bíblica em sua atuação conforme as diretrizes da Sincrologia.</p>
+        <p>Ao gerar este documento, o portador declara estar ciente de que o exercício da Capelania exige absoluto decoro e ética. Conforme a <strong>Lei Federal nº 9.982/2000</strong>, o acesso a hospitais, prisões, asilos e órgãos públicos é um direito assegurado ao capelão para oferecer suporte emocional e espiritual.</p>
+        <p>O capelão compromete-se a respeitar as normas internas e a não utilizar técnicas laicas ou esotéricas, mantendo a inspiração bíblica em sua atuação conforme as diretrizes da Faculdade AVANCE.</p>
     </div>
 
     <div class="form-section">
         <label style="font-weight: bold; cursor: pointer;">
             <input type="checkbox" id="aceite" style="width: auto;"> Eu aceito os termos e compromissos éticos da Capelania.
         </label><br><br>
-        <input type="text" id="nome" placeholder="Seu Nome Completo">
-        <input type="text" id="cpf" placeholder="Seu CPF (Ex: 000.000.000-00)">
+        <input type="text" id="nome" placeholder="Nome Completo do Aluno">
+        <input type="text" id="cpf" placeholder="CPF do Aluno (Ex: 000.000.000-00)">
         <button class="btn-gerar" onclick="gerarCertificado()">GERAR MEU CERTIFICADO</button>
     </div>
 </div>
@@ -78,13 +75,8 @@
             Este curso é validado pela Lei nº 9.394/96. Declaramos para os devidos fins que<br>
             <span class="nome-aluno" id="cert-nome">NOME DO ALUNO</span>
             concluiu o curso de formação técnica em Capelania, estando apto(a) ao exercício com acesso a ambientes contextualizados amparado pela Lei 9.982/00 para Suporte Emocional e Espiritual.
-            <br>
-            <small style="font-size: 16px;">Emissão autenticada em: <span id="cert-data"></span></small>
-        </div>
-
-     
-            </div>
-            
+            <br><br>
+            <small style="font-size: 18px;">Emissão autenticada em: <span id="cert-data"></span></small>
         </div>
 
         <div class="assinaturas">
@@ -93,45 +85,40 @@
                 Diretor Executivo | CGADB 65.099
             </div>
             <div class="ass-box">
-                <strong id="cert-nome-ass">NOME DO CAPELÃO</strong><br>
+                <strong id="cert-nome-ass">NOME DO ALUNO</strong><br>
                 Capelão(ã) | CPF: <span id="cert-cpf"></span>
             </div>
         </div>
     </div>
     <br>
-    <button class="btn-gerar" style="background: #25d366; width: 350px;" onclick="baixarImagem()">BAIXAR CERTIFICADO FINAL</button>
+    <button class="btn-gerar" style="background: #25d366; width: 350px; margin-bottom: 50px;" onclick="baixarImagem()">BAIXAR CERTIFICADO FINAL</button>
 </div>
 
 <script>
     function gerarCertificado() {
-        // 1. Verifica o aceite
         if (!document.getElementById('aceite').checked) {
             alert("Você precisa aceitar o Termo de Responsabilidade para continuar.");
             return;
         }
 
-        // 2. Coleta dados
         const nome = document.getElementById('nome').value.toUpperCase();
         const cpf = document.getElementById('cpf').value;
         
-        // 3. Validação
         if (nome.length < 5 || cpf.length < 11) {
             alert("Por favor, preencha o Nome Completo e o CPF corretamente.");
             return;
         }
 
-        // 4. Preenche os textos no certificado
         const dataAtual = new Date().toLocaleDateString('pt-BR');
+        
+        // Preenche o nome do aluno no corpo e na assinatura
         document.getElementById('cert-nome').innerText = nome;
         document.getElementById('cert-nome-ass').innerText = nome;
         document.getElementById('cert-cpf').innerText = cpf;
-        document.getElementById('cert-data').innerText = dataAtual
-        
+        document.getElementById('cert-data').innerText = dataAtual;
 
-        // 8. Mostra a área do certificado IMEDIATAMENTE
         document.getElementById('certificado-area').style.display = 'block';
         
-        // 9. Rola a página para baixo suavemente
         setTimeout(function(){
             window.scrollTo({
                 top: document.body.scrollHeight,
@@ -141,7 +128,6 @@
     }
 
     function baixarImagem() {
-        // Captura a área e gera a imagem
         html2canvas(document.querySelector("#capture"), {
             scale: 2,
             useCORS: true,
