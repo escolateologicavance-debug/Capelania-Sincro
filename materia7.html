@@ -3,118 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>07 - Capelania Hospitalar</title>
+<title>07 – Capelania Hospitalar</title>
 
 <style>
-body {
+body{
     font-family: Arial, sans-serif;
     background:#f0f2f5;
     max-width:900px;
     margin:auto;
-    padding:20px;
+    padding:25px;
+    line-height:1.8;
 }
-.quiz-container {
+.content-card, .quiz-container{
     background:#fff;
     padding:30px;
-    border-radius:10px;
+    border-radius:12px;
+    margin-bottom:30px;
 }
-.question-block {
-    margin-bottom:20px;
-}
-.btn-finalizar {
+h1,h2{color:#003366}
+.question-block{margin-bottom:20px}
+.question-text{font-weight:bold}
+.btn-finalizar{
     width:100%;
-    padding:15px;
+    padding:18px;
     font-size:18px;
     background:#003366;
     color:#fff;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     cursor:pointer;
 }
-#tela-bloqueio {
+#tela-bloqueio{
     display:none;
-    margin-top:20px;
+    border:2px solid red;
+    padding:20px;
+    text-align:center;
     color:red;
     font-weight:bold;
-    text-align:center;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===================== MATÉRIA 07 ===================== -->
+<div class="content-card">
+<h1>07 – Capelania Hospitalar</h1>
+
+<h2>1. O Ecossistema Hospitalar</h2>
+<p>
+A capelania hospitalar atua em um ambiente de alta complexidade emocional,
+onde dor, medo e incerteza fazem parte da rotina. O capelão não substitui
+o médico nem o psicólogo, mas oferece suporte espiritual e emocional,
+respeitando normas técnicas e éticas do hospital.
+</p>
+
+<h2>2. Escuta Terapêutica</h2>
+<p>
+A principal ferramenta do capelão é a escuta. Ouvir sem julgar,
+sem pressa e sem impor crenças permite que o paciente encontre
+alívio emocional e reorganize seus sentimentos diante da enfermidade.
+</p>
+
+<h2>3. Atuação em UTI</h2>
+<p>
+Na UTI, a presença do capelão deve ser breve, respeitosa e silenciosa.
+Leituras curtas, orações contidas e apoio às famílias fazem parte
+da atuação ética nesse ambiente.
+</p>
+
+<h2>4. Ética e Sigilo</h2>
+<p>
+O sigilo sobre diagnósticos e histórias pessoais é absoluto.
+A quebra dessa confiança viola princípios éticos e compromete
+a missão da capelania hospitalar.
+</p>
+
+<h2>5. Continuidade do Cuidado</h2>
+<p>
+O cuidado não termina com a alta. O capelão orienta o paciente
+a manter vínculos com sua comunidade de fé e a preservar a
+resiliência emocional construída durante a internação.
+</p>
+</div>
+
+<!-- ===================== AVALIAÇÃO ===================== -->
 <div class="quiz-container">
-<h2>AVALIAÇÃO – MATÉRIA 07</h2>
+<h2 style="text-align:center">AVALIAÇÃO – MATÉRIA 07</h2>
 
 <form id="quiz-form" onsubmit="return false;">
 
 <div class="question-block">
-<label><input type="radio" name="q1" value="C"> Correta</label>
-<label><input type="radio" name="q1" value="E"> Errada</label>
+<span class="question-text">1. Qual a principal função do capelão hospitalar?</span>
+<label><input type="radio" name="q1" value="C"> Suporte emocional e espiritual</label>
+<label><input type="radio" name="q1" value="E"> Substituir médicos</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q2" value="C"> Correta</label>
-<label><input type="radio" name="q2" value="E"> Errada</label>
+<span class="question-text">2. A escuta do capelão deve ser:</span>
+<label><input type="radio" name="q2" value="C"> Sem julgamentos</label>
+<label><input type="radio" name="q2" value="E"> Impositiva</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q3" value="C"> Correta</label>
-<label><input type="radio" name="q3" value="E"> Errada</label>
+<span class="question-text">3. Na UTI o capelão deve:</span>
+<label><input type="radio" name="q3" value="C"> Agir com discrição</label>
+<label><input type="radio" name="q3" value="E"> Interferir em procedimentos</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q4" value="C"> Correta</label>
-<label><input type="radio" name="q4" value="E"> Errada</label>
+<span class="question-text">4. O sigilo hospitalar é:</span>
+<label><input type="radio" name="q4" value="C"> Obrigatório</label>
+<label><input type="radio" name="q4" value="E"> Opcional</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q5" value="C"> Correta</label>
-<label><input type="radio" name="q5" value="E"> Errada</label>
+<span class="question-text">5. A espiritualidade no hospital:</span>
+<label><input type="radio" name="q5" value="C"> Auxilia o enfrentamento</label>
+<label><input type="radio" name="q5" value="E"> Não influencia</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q6" value="C"> Correta</label>
-<label><input type="radio" name="q6" value="E"> Errada</label>
+<span class="question-text">6. O capelão deve respeitar:</span>
+<label><input type="radio" name="q6" value="C"> Normas hospitalares</label>
+<label><input type="radio" name="q6" value="E"> Apenas regras religiosas</label>
 </div>
 
 <div class="question-block">
-<label><input type="radio" name="q7" value="C"> Correta</label>
-<label><input type="radio" name="q7" value="E"> Errada</label>
+<span class="question-text">7. O cuidado pós-alta envolve:</span>
+<label><input type="radio" name="q7" value="C"> Continuidade emocional</label>
+<label><input type="radio" name="q7" value="E"> Abandono do acompanhamento</label>
 </div>
 
-<button class="btn-finalizar" onclick="validar()">FINALIZAR</button>
+<button class="btn-finalizar" onclick="validar()">FINALIZAR AVALIAÇÃO</button>
 </form>
 
-<div id="tela-bloqueio">REPROVADO</div>
+<div id="tela-bloqueio">
+REPROVADO – NOTA INSUFICIENTE
+</div>
 </div>
 
 <script>
-function validar() {
+function validar(){
     let nota = 0;
 
-    for (let i = 1; i <= 7; i++) {
-        let marcada = false;
-        let ops = document.getElementsByName("q" + i);
+    for(let i=1;i<=7;i++){
+        let respondeu = false;
+        let ops = document.getElementsByName("q"+i);
 
-        for (let op of ops) {
-            if (op.checked) {
-                marcada = true;
-                if (op.value === "C") nota++;
+        for(let op of ops){
+            if(op.checked){
+                respondeu = true;
+                if(op.value==="C") nota++;
             }
         }
-
-        if (!marcada) {
-            alert("Responda todas as perguntas.");
+        if(!respondeu){
+            alert("Responda todas as questões.");
             return;
         }
     }
 
-    if (nota >= 7) {
-        window.location.assign("materia8.html");
-    } else {
-        document.getElementById("quiz-form").style.display = "none";
-        document.getElementById("tela-bloqueio").style.display = "block";
+    if(nota >= 7){
+        window.location.href = "materia8.html";
+    }else{
+        document.getElementById("quiz-form").style.display="none";
+        document.getElementById("tela-bloqueio").style.display="block";
     }
 }
 </script>
